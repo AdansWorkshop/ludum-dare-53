@@ -2,8 +2,7 @@
 import pyglet, math, random
 from pyglet.window import key
 from pyglet.media import *
-from pyglet.gl import *
-from openal import * 
+from pyglet.gl import * 
 window = pyglet.window.Window(width = 960, height = 540)
 window.set_caption("Drifty Delivery Service")
 main_batch = pyglet.graphics.Batch()
