@@ -1,7 +1,6 @@
 ## Drifty Delivery Service
 import pyglet, math, random
 from pyglet.window import key
-from pyglet.media import *
 from pyglet.gl import * 
 window = pyglet.window.Window(width = 960, height = 540)
 window.set_caption("Drifty Delivery Service")
@@ -31,9 +30,9 @@ class Score():
     def inc(self, score):
         self.score += score
 
-engine = StaticSource(load("assets/engine.wav"))
+engine = pyglet.media.StaticSource(pyglet.media.load("assets/engine.wav"))
 audioPlayer2.queue(engine)
-delivered = StaticSource(load("assets/delivered.wav"))
+delivered = pyglet.media.StaticSource(pyglet.media.load("assets/delivered.wav"))
 
 
 def newPackage():
